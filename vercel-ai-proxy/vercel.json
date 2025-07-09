@@ -1,8 +1,0 @@
-{
-    "functions": {
-      "api/ai.ts": {
-        "runtime": "@vercel/node"
-      }
-    }
-  }
-  
