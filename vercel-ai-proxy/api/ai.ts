@@ -35,7 +35,8 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   const text = result.response.text();
   let results;
   try {
-    results = JSON.parse(text);
+    const cleaned = text.replace(/```json|```/g, '').trim();
+    results = JSON.parse(cleaned);
   } catch (e) {
     res.status(500).json({ error: 'AI 응답 파싱 실패', raw: text });
     return;
