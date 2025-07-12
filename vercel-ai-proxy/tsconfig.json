@@ -1,14 +1,5 @@
 {
-  "compilerOptions": {
-    "target": "es2020", // 최신 JavaScript 버전으로 컴파일
-    "module": "commonjs", // Node.js 환경에 맞는 모듈 시스템 사용
-    "esModuleInterop": true, // ES 모듈과 CommonJS 모듈 간의 호환성 활성화
-    "forceConsistentCasingInFileNames": true, // 파일 이름 대소문자 일관성 강제
-    "strict": true, // 엄격한 타입 검사 활성화 (권장)
-    "skipLibCheck": true, // 라이브러리 타입 검사 건너뛰기 (성능 향상)
-    "types": ["node"], // Node.js 타입 정의 포함
-    "outDir": "./dist" // 컴파일된 JavaScript 파일이 저장될 디렉토리
-  },
-  "include": ["api/**/*.ts"], // 컴파일할 TypeScript 파일의 경로
-  "exclude": ["node_modules"] // 컴파일에서 제외할 디렉토리
-}
+    "compilerOptions": {
+      "types": ["node"]
+    }
+  }
